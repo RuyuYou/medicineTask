@@ -1,0 +1,79 @@
+{
+  "adminList": [
+    {
+      "id": "SY100102",
+      "name": "丽珠得乐",
+      "price": "22.44",
+      "store": "怡心大药房",
+      "source": "儿童药"
+    },
+    {
+      "id": "SY100103",
+      "name": "三九胃泰",
+      "price": "33.45",
+      "store": "怡心大药房",
+      "source": "胃药"
+    },
+    {
+      "id": "SY100104",
+      "name": "金花液体钙",
+      "price": "346.77",
+      "store": "怡心大药房",
+      "source": "西药"
+    },
+    {
+      "id": "3335",
+      "name": "1eeeeedfasdfsd",
+      "price": "1dddd",
+      "store": "1",
+      "source": "1"
+    },
+    {
+      "id": "33356",
+      "name": "1",
+      "price": "1",
+      "store": "1",
+      "source": "1"
+    },
+    {
+      "id": "1",
+      "name": "1",
+      "price": "1",
+      "store": "1",
+      "source": "1"
+    },
+    {
+      "id": "12222",
+      "name": "1",
+      "price": "1",
+      "store": "1",
+      "source": "1"
+    },
+    {
+      "id": "fff",
+      "name": "1",
+      "price": "1",
+      "store": "1",
+      "source": "1"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "token": "NDUYZTMTAwMDAzNzIxNzcxNzEyT01jWnplTDlQ",
+      "permission": 0
+    },
+    {
+      "id": 2,
+      "username": "customer",
+      "password": "customer",
+      "token": "NDUYZTMTAwMDAzNzIxNzcxNzEyT01jynbdTDlQ",
+      "permission": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

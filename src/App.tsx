@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, useRoutes } from 'react-router-dom';
+import HomePage from './homepage/homepage';
+import Login from './login/login';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export interface RouteObject {
+  element?: React.ReactNode;
+  path?: string;
+
 }
+
+export const rootRouter: RouteObject[] = [
+  {
+    path: '/homepage',
+    element: <HomePage to="/homepage"/>
+  },
+  {
+    path: '/login',
+    element: <Login to="login"/>
+  },
+  {
+    path: '/',
+    element: <Login to="login"/>
+  }
+];
+
+const Router = () => {
+  return useRoutes(rootRouter);
+};
+
+const App = () => {
+  return (
+    <HashRouter>
+      <Router/>
+    </HashRouter>
+  );
+};
 
 export default App;
